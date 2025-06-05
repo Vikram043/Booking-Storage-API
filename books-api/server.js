@@ -9,7 +9,7 @@ const DB_PATH = path.join(__dirname, 'db.json');
 
 app.use(bodyParser.json());
 
-// Helper functions for reading/writing db.json
+
 const readDB = () => {
   const data = fs.readFileSync(DB_PATH, 'utf-8');
   return JSON.parse(data);
